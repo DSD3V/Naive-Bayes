@@ -1,8 +1,5 @@
 #include "core/classifier.h"
 
-#include <iostream>
-using std::cout; using std::endl;
-
 namespace naivebayes {
     Classifier::Classifier(TrainingModel& training_model) :
     training_model_(&training_model) {}

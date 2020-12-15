@@ -1,0 +1,9 @@
+training_images.txt: 5000 training digits made of ASCII characters, around 500 samples for each digit. Each digit is 28x28.
+
+training_labels.txt: the correct labels for every digit from trainingimages.txt.
+
+test_images.txt: 1000 digits to use to test the accuracy of the model generated from the training images
+
+test_labels.txt: the correct labels for every digit from testimages.txt
+
+training_model.txt: stores the trained model

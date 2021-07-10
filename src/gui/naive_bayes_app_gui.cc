@@ -30,14 +30,14 @@ namespace naivebayes {
     
     void NaiveBayesAppGui::DrawTitle(const int gui_width, const int gui_height) const {
         const Font title_font = Font("Roboto", (gui_width + gui_height) * .023f);
-        gl::drawStringCentered("Naïve Bayes Digit Classifier", glm::vec2(gui_width / 2, gui_height * .01f),
+        gl::drawStringCentered("Naïve Bayes Digit Classifier", glm::vec2(gui_width / 2, gui_height * .02f),
                                Color(1, 1, 1), title_font);
     }
 
     void NaiveBayesAppGui::DrawSubtitle(const int gui_width, const int gui_height) const {
-        const Font subtitle_font = Font("Roboto", (gui_width + gui_height) * .015f);
+        const Font subtitle_font = Font("Roboto", (gui_width + gui_height) * .017f);
         gl::drawStringCentered(R"(Draw a digit and press "c" to classify it, and "e" to erase it.)",
-                               glm::vec2(gui_width / 2, gui_height * .07f),Color(1, 1, 1), subtitle_font);
+                               glm::vec2(gui_width / 2, gui_height * .1f),Color(1, 1, 1), subtitle_font);
     }
 
     void NaiveBayesAppGui::DrawBoard(const int gui_width, const int gui_height) {
